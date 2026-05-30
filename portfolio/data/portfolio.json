@@ -1,0 +1,282 @@
+{
+  "personal": {
+    "name": "Owolabi Oluwashijibomi Jeremiah",
+    "nameShort": "Oluwashijibomi",
+    "title": "Computer Scientist",
+    "email": "owolabi@example.com",
+    "github": "https://github.com/owolabi",
+    "linkedin": "https://linkedin.com/in/owolabi",
+    "twitter": "https://twitter.com/owolabi",
+    "resumeUrl": "/resume.pdf",
+    "roles": [
+      "AI & Machine Learning Systems",
+      "Distributed Systems",
+      "Cloud Engineering",
+      "Software Engineering",
+      "Cybersecurity"
+    ],
+    "bio": "I build serious systems — from AI-powered platforms to distributed cloud infrastructure. Currently studying Computer Science at Lead City University, where I explore the intersection of intelligent systems, scalable architectures, and network security.",
+    "location": "Nigeria"
+  },
+  "about": {
+    "headline": "Engineering the Future, One System at a Time",
+    "paragraphs": [
+      "I'm a Computer Science student at Lead City University with a deep passion for building systems that scale. My work spans AI infrastructure, cloud engineering, distributed computing, and cybersecurity.",
+      "I believe great software is not just functional — it's thoughtful, resilient, and built for the future. I design systems with first-principles thinking, always asking: what happens at 10x scale?",
+      "When I'm not coding, I'm researching distributed consensus algorithms, exploring AI infrastructure patterns, or diving into network security protocols."
+    ],
+    "university": "Lead City University",
+    "degree": "Bachelor of Science, Computer Science",
+    "stats": [
+      { "value": "15+", "label": "Projects Built" },
+      { "value": "5+", "label": "Technologies Mastered" },
+      { "value": "2+", "label": "Years Experience" },
+      { "value": "3+", "label": "Internships" }
+    ]
+  },
+  "skills": [
+    { "name": "Python", "category": "Languages", "level": 92 },
+    { "name": "JavaScript", "category": "Languages", "level": 90 },
+    { "name": "TypeScript", "category": "Languages", "level": 85 },
+    { "name": "React", "category": "Frontend", "level": 88 },
+    { "name": "Next.js", "category": "Frontend", "level": 85 },
+    { "name": "Node.js", "category": "Backend", "level": 87 },
+    { "name": "Express", "category": "Backend", "level": 85 },
+    { "name": "PostgreSQL", "category": "Database", "level": 82 },
+    { "name": "MongoDB", "category": "Database", "level": 80 },
+    { "name": "Docker", "category": "DevOps", "level": 78 },
+    { "name": "Linux", "category": "Systems", "level": 88 },
+    { "name": "AWS", "category": "Cloud", "level": 80 },
+    { "name": "Azure", "category": "Cloud", "level": 75 },
+    { "name": "Machine Learning", "category": "AI", "level": 82 },
+    { "name": "Artificial Intelligence", "category": "AI", "level": 80 },
+    { "name": "Cybersecurity", "category": "Security", "level": 78 },
+    { "name": "Networking", "category": "Systems", "level": 80 },
+    { "name": "Distributed Systems", "category": "Systems", "level": 82 }
+  ],
+  "projects": [
+    {
+      "id": "lecture-link",
+      "featured": true,
+      "title": "LECTURE-LINK",
+      "subtitle": "AI-Enhanced Departmental Learning Portal",
+      "description": "A full-stack AI-powered learning management system built for university departments. Features semantic search across all course materials, an intelligent AI chatbot for student queries, and a comprehensive analytics dashboard for educators.",
+      "longDescription": "LECTURE-LINK reimagines how universities manage and deliver educational content. Built with a microservices architecture, it handles thousands of concurrent users while providing personalized learning experiences powered by machine learning. The semantic search engine indexes lecture notes, past papers, and resources — returning contextually relevant results even for vague queries.",
+      "category": "AI/ML Projects",
+      "tags": ["Next.js", "Python", "FastAPI", "PostgreSQL", "OpenAI", "Docker", "AWS"],
+      "features": [
+        "Semantic Search with vector embeddings",
+        "AI Chatbot with RAG architecture",
+        "Learning Resources Repository",
+        "Role-Based Access Control",
+        "Analytics Dashboard"
+      ],
+      "github": "https://github.com/owolabi/lecture-link",
+      "demo": "https://lecture-link.demo.com",
+      "color": "#00d4ff",
+      "status": "Production"
+    },
+    {
+      "id": "cloud-orchestrator",
+      "featured": false,
+      "title": "Cloud Orchestrator",
+      "subtitle": "Multi-Cloud Infrastructure Management",
+      "description": "A unified dashboard for managing resources across AWS and Azure. Provides cost optimization recommendations, automated scaling policies, and infrastructure-as-code generation.",
+      "longDescription": "Designed to solve the complexity of multi-cloud deployments, this orchestrator unifies resource management, monitoring, and cost analysis across major cloud providers.",
+      "category": "Cloud Engineering Projects",
+      "tags": ["Python", "Terraform", "AWS", "Azure", "React", "FastAPI"],
+      "features": [
+        "Multi-cloud resource management",
+        "Cost optimization AI",
+        "Auto-scaling policies",
+        "IaC generation",
+        "Real-time monitoring"
+      ],
+      "github": "https://github.com/owolabi/cloud-orchestrator",
+      "demo": "",
+      "color": "#7c3aed",
+      "status": "In Progress"
+    },
+    {
+      "id": "distributed-kv",
+      "featured": false,
+      "title": "DistKV",
+      "subtitle": "Distributed Key-Value Store",
+      "description": "A fault-tolerant distributed key-value store implementing the Raft consensus algorithm from scratch. Supports leader election, log replication, and cluster membership changes.",
+      "longDescription": "Built as a deep-dive into distributed systems theory, DistKV implements Raft consensus with a focus on correctness under network partitions and node failures.",
+      "category": "Distributed Systems Projects",
+      "tags": ["Python", "gRPC", "Docker", "Linux", "Networking"],
+      "features": [
+        "Raft consensus algorithm",
+        "Leader election",
+        "Log replication",
+        "Cluster membership changes",
+        "Fault tolerance"
+      ],
+      "github": "https://github.com/owolabi/distkv",
+      "demo": "",
+      "color": "#10b981",
+      "status": "Complete"
+    },
+    {
+      "id": "neural-ids",
+      "featured": false,
+      "title": "Neural IDS",
+      "subtitle": "AI-Powered Intrusion Detection System",
+      "description": "A machine learning-based network intrusion detection system trained on real attack patterns. Achieves 97% accuracy on the KDD99 dataset with real-time packet analysis.",
+      "longDescription": "Combining deep learning with network security, Neural IDS monitors traffic patterns and flags anomalies in real-time using a custom LSTM-based classifier.",
+      "category": "Cybersecurity Projects",
+      "tags": ["Python", "TensorFlow", "Scapy", "Linux", "Docker"],
+      "features": [
+        "Real-time packet analysis",
+        "LSTM anomaly detection",
+        "Attack classification",
+        "Dashboard visualization",
+        "Alert system"
+      ],
+      "github": "https://github.com/owolabi/neural-ids",
+      "demo": "",
+      "color": "#ef4444",
+      "status": "Complete"
+    },
+    {
+      "id": "api-gateway",
+      "featured": false,
+      "title": "Apex Gateway",
+      "subtitle": "High-Performance API Gateway",
+      "description": "A custom API gateway built with Node.js supporting rate limiting, JWT auth, request transformation, and load balancing across microservices.",
+      "longDescription": "Apex Gateway handles 50k+ requests per second with sub-millisecond routing latency. Features a plugin architecture for extensibility.",
+      "category": "Web Development Projects",
+      "tags": ["Node.js", "Redis", "Docker", "PostgreSQL", "TypeScript"],
+      "features": [
+        "Rate limiting",
+        "JWT authentication",
+        "Load balancing",
+        "Request transformation",
+        "Plugin system"
+      ],
+      "github": "https://github.com/owolabi/apex-gateway",
+      "demo": "",
+      "color": "#f59e0b",
+      "status": "Complete"
+    },
+    {
+      "id": "ml-pipeline",
+      "featured": false,
+      "title": "MLFlow Engine",
+      "subtitle": "Automated ML Training Pipeline",
+      "description": "An end-to-end machine learning pipeline for automated model training, evaluation, versioning, and deployment. Integrates with AWS SageMaker for distributed training.",
+      "longDescription": "Built to eliminate ML engineering boilerplate, this pipeline handles data ingestion, feature engineering, model training, A/B testing, and production deployment automatically.",
+      "category": "AI/ML Projects",
+      "tags": ["Python", "AWS", "Docker", "PostgreSQL", "FastAPI"],
+      "features": [
+        "Automated training",
+        "Model versioning",
+        "A/B testing",
+        "AWS SageMaker integration",
+        "Monitoring"
+      ],
+      "github": "https://github.com/owolabi/mlflow-engine",
+      "demo": "",
+      "color": "#06b6d4",
+      "status": "In Progress"
+    }
+  ],
+  "experience": [
+    {
+      "id": "gpi",
+      "company": "Graphics Packaging International",
+      "role": "IT Intern",
+      "period": "2023",
+      "duration": "3 months",
+      "description": "Assisted in maintaining enterprise IT infrastructure across production facilities. Handled hardware diagnostics, software deployment, and network troubleshooting in a high-throughput manufacturing environment.",
+      "highlights": [
+        "Diagnosed and resolved 50+ hardware/software issues",
+        "Assisted in deploying enterprise software updates",
+        "Documented IT procedures and workflows",
+        "Collaborated with senior engineers on network maintenance"
+      ],
+      "type": "internship"
+    },
+    {
+      "id": "itsupport",
+      "company": "Lead City University ICT Center",
+      "role": "Student IT Support Technician",
+      "period": "2022 – 2023",
+      "duration": "1 year",
+      "description": "Provided first-line technical support for students and faculty. Managed lab systems, handled network issues, and maintained university computing resources.",
+      "highlights": [
+        "Provided support for 500+ students and staff",
+        "Managed 40+ lab workstations",
+        "Configured network equipment and managed VLANs",
+        "Automated lab maintenance with shell scripts"
+      ],
+      "type": "part-time"
+    },
+    {
+      "id": "freelance",
+      "company": "Freelance",
+      "role": "Full-Stack Developer",
+      "period": "2022 – Present",
+      "duration": "2+ years",
+      "description": "Design and build web applications for clients ranging from startups to academic institutions. Specialize in performant backends, cloud deployments, and AI integrations.",
+      "highlights": [
+        "Delivered 10+ client projects end-to-end",
+        "Built and deployed cloud-hosted applications on AWS",
+        "Integrated AI/ML features into client products",
+        "Managed full project lifecycle from design to deployment"
+      ],
+      "type": "freelance"
+    }
+  ],
+  "research": [
+    {
+      "title": "Distributed Systems",
+      "description": "Consensus algorithms, fault tolerance, CAP theorem trade-offs in real-world systems.",
+      "icon": "network",
+      "color": "#00d4ff"
+    },
+    {
+      "title": "Cloud Computing",
+      "description": "Serverless architectures, multi-cloud strategies, cost-efficient scaling.",
+      "icon": "cloud",
+      "color": "#7c3aed"
+    },
+    {
+      "title": "AI Infrastructure",
+      "description": "MLOps pipelines, model serving at scale, AI-native application architectures.",
+      "icon": "brain",
+      "color": "#10b981"
+    },
+    {
+      "title": "ML Systems",
+      "description": "Training pipelines, feature stores, real-time inference optimization.",
+      "icon": "cpu",
+      "color": "#f59e0b"
+    },
+    {
+      "title": "Network Security",
+      "description": "Intrusion detection, zero-trust architectures, cryptographic protocols.",
+      "icon": "shield",
+      "color": "#ef4444"
+    },
+    {
+      "title": "Internet Measurements",
+      "description": "Network topology analysis, latency characterization, BGP routing behavior.",
+      "icon": "globe",
+      "color": "#06b6d4"
+    },
+    {
+      "title": "Concurrent Systems",
+      "description": "Lock-free data structures, actor models, high-throughput concurrent programming.",
+      "icon": "zap",
+      "color": "#a855f7"
+    },
+    {
+      "title": "Scalable Computing",
+      "description": "Horizontal scaling patterns, sharding strategies, performance engineering.",
+      "icon": "layers",
+      "color": "#ec4899"
+    }
+  ]
+}

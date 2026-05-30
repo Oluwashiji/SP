@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+:root {
+  --black: #050505;
+  --gray-950: #0a0a0f;
+  --gray-900: #111118;
+  --gray-800: #1a1a24;
+  --gray-700: #252535;
+  --gray-600: #3a3a50;
+  --gray-400: #8888aa;
+  --gray-300: #aaaacc;
+  --gray-100: #e8e8f0;
+  --white: #f0f0f8;
+  --cyan: #00d4ff;
+  --cyan-dim: #0099bb;
+  --blue: #0066ff;
+  --blue-bright: #3388ff;
+  --purple: #7c3aed;
+  --purple-bright: #a855f7;
+  --emerald: #10b981;
+  --amber: #f59e0b;
+  --red: #ef4444;
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--cyan-dim) var(--gray-900);
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar { width: 4px; }
+html::-webkit-scrollbar-track { background: var(--gray-900); }
+html::-webkit-scrollbar-thumb { background: var(--cyan-dim); border-radius: 2px; }
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { cursor: none !important; }
+
+.cursor {
+  position: fixed; top: 0; left: 0;
+  width: 10px; height: 10px;
+  background: var(--cyan); border-radius: 50%;
+  pointer-events: none; z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, background 0.3s;
+  mix-blend-mode: screen;
+}
+.cursor-ring {
+  position: fixed; top: 0; left: 0;
+  width: 36px; height: 36px;
+  border: 1px solid rgba(0,212,255,0.4); border-radius: 50%;
+  pointer-events: none; z-index: 99998;
+  transform: translate(-50%, -50%);
+  transition: width 0.25s, height 0.25s, border-color 0.25s;
+}
+.cursor-ring.hovering { width: 56px; height: 56px; border-color: rgba(0,212,255,0.8); }
+
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, var(--cyan) 0%, var(--blue-bright) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.text-gradient-purple {
+  background: linear-gradient(135deg, var(--purple-bright) 0%, var(--cyan) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
+.section-container { max-width: 1400px; margin: 0 auto; padding: 0 2rem; }
+@media (max-width: 768px) { .section-container { padding: 0 1.25rem; } }
+
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(0,212,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,212,255,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.holo-card {
+  background: linear-gradient(135deg,rgba(255,255,255,0.05) 0%,rgba(0,212,255,0.03) 50%,rgba(124,58,237,0.03) 100%);
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(20px);
+}
+
+.nav-blur {
+  backdrop-filter: blur(24px) saturate(150%);
+  background: rgba(5,5,5,0.75);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+@keyframes float-slow { 0%,100%{transform:translateY(-5px)} 50%{transform:translateY(5px)} }
+@keyframes spin-slow { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+@keyframes pulse-glow { 0%,100%{box-shadow:0 0 20px rgba(0,212,255,0.3)} 50%{box-shadow:0 0 60px rgba(0,212,255,0.6)} }
+@keyframes data-stream { 0%{transform:translateY(-100%);opacity:0} 10%{opacity:1} 90%{opacity:1} 100%{transform:translateY(100vh);opacity:0} }
+@keyframes glitch {
+  0%,100%{clip-path:inset(0 0 100% 0)}
+  10%{clip-path:inset(20% 0 60% 0);transform:translate(-3px)}
+  20%{clip-path:inset(50% 0 30% 0);transform:translate(3px)}
+  30%{clip-path:inset(10% 0 80% 0);transform:translate(-1px)}
+  40%{clip-path:inset(70% 0 10% 0);transform:translate(2px)}
+  50%{clip-path:inset(0 0 100% 0)}
+}
+
+::selection { background: rgba(0,212,255,0.25); color: var(--white); }
+:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 4px; }
+canvas { display: block; }
