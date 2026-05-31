@@ -58,12 +58,12 @@ export default function Nav() {
             </a>
 
             {/* Desktop nav */}
-            <ul className="hidden md:flex items-center gap-1">
+            <ul className="hidden md:flex items-center gap-3">
               {NAV_ITEMS.map(({ label, href }) => (
                 <li key={href}>
                   <a
                     href={href}
-                    className="relative px-3 py-1.5 text-sm font-mono transition-colors duration-200"
+                    className="relative px-5 py-1.5 text-sm font-mono transition-colors duration-200"
                     style={{
                       color: active === href ? "var(--cyan)" : "var(--gray-400)",
                     }}
