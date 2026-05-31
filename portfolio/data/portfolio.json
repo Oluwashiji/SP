@@ -3,27 +3,26 @@
     "name": "Owolabi Oluwashijibomi Jeremiah",
     "nameShort": "Oluwashijibomi",
     "title": "Computer Scientist",
-    "email": "owolabi@example.com",
-    "github": "https://github.com/owolabi",
-    "linkedin": "https://linkedin.com/in/owolabi",
-    "twitter": "https://twitter.com/owolabi",
+    "email": "oluwashijibomii@yahoo.com",
+    "phone": "+234 9072038272",
+    "github": "https://github.com/Oluwashiji",
+    "linkedin": "https://www.linkedin.com/in/oluwashijibomi-owolabi-a4129a317/",
     "resumeUrl": "/resume.pdf",
     "roles": [
-      "AI & Machine Learning Systems",
-      "Distributed Systems",
-      "Cloud Engineering",
-      "Software Engineering",
-      "Cybersecurity"
+      "AI & Machine Learning Engineer",
+      "Cloud Engineer",
+      "Full-Stack Developer",
+      "Software Engineer"
     ],
-    "bio": "I build serious systems — from AI-powered platforms to distributed cloud infrastructure. Currently studying Computer Science at Lead City University, where I explore the intersection of intelligent systems, scalable architectures, and network security.",
+    "bio": "I build AI systems that work in production. My focus is the intersection of machine learning and cloud infrastructure, model serving, inference pipelines, and the engineering decisions that make intelligent systems reliable at scale.",
     "location": "Nigeria"
   },
   "about": {
     "headline": "Engineering the Future, One System at a Time",
     "paragraphs": [
-      "I'm a Computer Science student at Lead City University with a deep passion for building systems that scale. My work spans AI infrastructure, cloud engineering, distributed computing, and cybersecurity.",
+      "I'm a Computer Science student at Lead City University with a deep passion for building systems that scale. My work spans AI and machine learning, cloud engineering, and full-stack web development.",
       "I believe great software is not just functional — it's thoughtful, resilient, and built for the future. I design systems with first-principles thinking, always asking: what happens at 10x scale?",
-      "When I'm not coding, I'm researching distributed consensus algorithms, exploring AI infrastructure patterns, or diving into network security protocols."
+      "When I'm not coding, I'm researching ML infrastructure patterns, exploring cloud-native architectures, or shipping products that solve real problems."
     ],
     "university": "Lead City University",
     "degree": "Bachelor of Science, Computer Science",
@@ -50,8 +49,6 @@
     { "name": "Azure", "category": "Cloud", "level": 75 },
     { "name": "Machine Learning", "category": "AI", "level": 82 },
     { "name": "Artificial Intelligence", "category": "AI", "level": 80 },
-    { "name": "Cybersecurity", "category": "Security", "level": 78 },
-    { "name": "Networking", "category": "Systems", "level": 80 },
     { "name": "Distributed Systems", "category": "Systems", "level": 82 }
   ],
   "projects": [
@@ -71,9 +68,70 @@
         "Role-Based Access Control",
         "Analytics Dashboard"
       ],
-      "github": "https://github.com/owolabi/lecture-link",
-      "demo": "https://lecture-link.demo.com",
+      "github": "https://github.com/Oluwashiji",
+      "demo": "https://link-lecture-1.onrender.com",
       "color": "#00d4ff",
+      "status": "Production"
+    },
+    {
+      "id": "phishguard",
+      "featured": false,
+      "title": "PhishGuard",
+      "subtitle": "AI-Powered Phishing Detection",
+      "description": "Analyzes URLs in real time and classifies them as safe or malicious using an ensemble of four machine learning models: Logistic Regression, Random Forest, MLP Neural Network, and SVM.",
+      "longDescription": "Four models. One verdict. No phishing gets through. PhishGuard extracts smart features from URLs, length, entropy, suspicious keywords, domain age signals, and more, runs them through trained classifiers, and returns an instant threat verdict with confidence scores. Built with a Flask + scikit-learn backend and a React/TypeScript frontend, deployed on Render with an LRU result cache for performance under constrained server environments.",
+      "category": "AI/ML Projects",
+      "tags": ["Python", "Flask", "scikit-learn", "React", "TypeScript", "Machine Learning"],
+      "features": [
+        "Ensemble of 4 ML classifiers",
+        "Real-time URL feature extraction",
+        "Confidence score per model",
+        "Live demo mode",
+        "LRU result cache"
+      ],
+      "github": "https://github.com/Oluwashiji",
+      "demo": "https://phishguard-1-h7ql.onrender.com/",
+      "color": "#ef4444",
+      "status": "Production"
+    },
+    {
+      "id": "gpi-website",
+      "featured": false,
+      "title": "IPG Localized Site",
+      "subtitle": "Corporate Website · Graphics Packaging International",
+      "description": "A localized web presence built for GPI during my internship. Clean, performant, and branded to the company's identity.",
+      "longDescription": "Built and deployed a localized corporate website for Graphics Packaging International as part of my internship work. Focused on performance, accessibility, and accurate brand representation.",
+      "category": "Web Development Projects",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "features": [
+        "Responsive design",
+        "Brand-accurate UI",
+        "Optimized performance",
+        "Clean information architecture"
+      ],
+      "github": "https://github.com/Oluwashiji/IPG",
+      "demo": "https://oluwashiji.github.io/IPG/index.html",
+      "color": "#f59e0b",
+      "status": "Complete"
+    },
+    {
+      "id": "bereah",
+      "featured": false,
+      "title": "Bereah",
+      "subtitle": "Landing Page · AI Bible Startup",
+      "description": "A modern, conversion-focused landing page for Bereah — an AI-powered Bible study startup. Designed to communicate vision, build trust, and drive signups.",
+      "longDescription": "Designed and built the marketing landing page for Bereah, an AI Bible startup. The page communicates the product's value proposition with clean typography, smooth animations, and a strong call to action.",
+      "category": "Web Development Projects",
+      "tags": ["React", "TypeScript", "Tailwind CSS"],
+      "features": [
+        "Conversion-optimized layout",
+        "Smooth scroll animations",
+        "Mobile-first responsive design",
+        "Fast load performance"
+      ],
+      "github": "https://github.com/Oluwashiji",
+      "demo": "https://bereah-landing.onrender.com/",
+      "color": "#a855f7",
       "status": "Production"
     },
     {
@@ -92,73 +150,10 @@
         "IaC generation",
         "Real-time monitoring"
       ],
-      "github": "https://github.com/owolabi/cloud-orchestrator",
+      "github": "https://github.com/Oluwashiji",
       "demo": "",
       "color": "#7c3aed",
       "status": "In Progress"
-    },
-    {
-      "id": "distributed-kv",
-      "featured": false,
-      "title": "DistKV",
-      "subtitle": "Distributed Key-Value Store",
-      "description": "A fault-tolerant distributed key-value store implementing the Raft consensus algorithm from scratch. Supports leader election, log replication, and cluster membership changes.",
-      "longDescription": "Built as a deep-dive into distributed systems theory, DistKV implements Raft consensus with a focus on correctness under network partitions and node failures.",
-      "category": "Distributed Systems Projects",
-      "tags": ["Python", "gRPC", "Docker", "Linux", "Networking"],
-      "features": [
-        "Raft consensus algorithm",
-        "Leader election",
-        "Log replication",
-        "Cluster membership changes",
-        "Fault tolerance"
-      ],
-      "github": "https://github.com/owolabi/distkv",
-      "demo": "",
-      "color": "#10b981",
-      "status": "Complete"
-    },
-    {
-      "id": "neural-ids",
-      "featured": false,
-      "title": "Neural IDS",
-      "subtitle": "AI-Powered Intrusion Detection System",
-      "description": "A machine learning-based network intrusion detection system trained on real attack patterns. Achieves 97% accuracy on the KDD99 dataset with real-time packet analysis.",
-      "longDescription": "Combining deep learning with network security, Neural IDS monitors traffic patterns and flags anomalies in real-time using a custom LSTM-based classifier.",
-      "category": "Cybersecurity Projects",
-      "tags": ["Python", "TensorFlow", "Scapy", "Linux", "Docker"],
-      "features": [
-        "Real-time packet analysis",
-        "LSTM anomaly detection",
-        "Attack classification",
-        "Dashboard visualization",
-        "Alert system"
-      ],
-      "github": "https://github.com/owolabi/neural-ids",
-      "demo": "",
-      "color": "#ef4444",
-      "status": "Complete"
-    },
-    {
-      "id": "api-gateway",
-      "featured": false,
-      "title": "Apex Gateway",
-      "subtitle": "High-Performance API Gateway",
-      "description": "A custom API gateway built with Node.js supporting rate limiting, JWT auth, request transformation, and load balancing across microservices.",
-      "longDescription": "Apex Gateway handles 50k+ requests per second with sub-millisecond routing latency. Features a plugin architecture for extensibility.",
-      "category": "Web Development Projects",
-      "tags": ["Node.js", "Redis", "Docker", "PostgreSQL", "TypeScript"],
-      "features": [
-        "Rate limiting",
-        "JWT authentication",
-        "Load balancing",
-        "Request transformation",
-        "Plugin system"
-      ],
-      "github": "https://github.com/owolabi/apex-gateway",
-      "demo": "",
-      "color": "#f59e0b",
-      "status": "Complete"
     },
     {
       "id": "ml-pipeline",
@@ -176,7 +171,7 @@
         "AWS SageMaker integration",
         "Monitoring"
       ],
-      "github": "https://github.com/owolabi/mlflow-engine",
+      "github": "https://github.com/Oluwashiji",
       "demo": "",
       "color": "#06b6d4",
       "status": "In Progress"
@@ -192,8 +187,8 @@
       "description": "Assisted in maintaining enterprise IT infrastructure across production facilities. Handled hardware diagnostics, software deployment, and network troubleshooting in a high-throughput manufacturing environment.",
       "highlights": [
         "Diagnosed and resolved 50+ hardware/software issues",
+        "Built and deployed a localized company website",
         "Assisted in deploying enterprise software updates",
-        "Documented IT procedures and workflows",
         "Collaborated with senior engineers on network maintenance"
       ],
       "type": "internship"
@@ -219,10 +214,10 @@
       "role": "Full-Stack Developer",
       "period": "2022 – Present",
       "duration": "2+ years",
-      "description": "Design and build web applications for clients ranging from startups to academic institutions. Specialize in performant backends, cloud deployments, and AI integrations.",
+      "description": "Design and build web applications for clients ranging from startups to academic institutions. Specialize in performant frontends, cloud deployments, and AI integrations.",
       "highlights": [
         "Delivered 10+ client projects end-to-end",
-        "Built and deployed cloud-hosted applications on AWS",
+        "Built and deployed cloud-hosted applications on Render and AWS",
         "Integrated AI/ML features into client products",
         "Managed full project lifecycle from design to deployment"
       ],
@@ -231,34 +226,34 @@
   ],
   "research": [
     {
-      "title": "Distributed Systems",
-      "description": "Consensus algorithms, fault tolerance, CAP theorem trade-offs in real-world systems.",
-      "icon": "network",
-      "color": "#00d4ff"
-    },
-    {
-      "title": "Cloud Computing",
-      "description": "Serverless architectures, multi-cloud strategies, cost-efficient scaling.",
-      "icon": "cloud",
-      "color": "#7c3aed"
-    },
-    {
       "title": "AI Infrastructure",
       "description": "MLOps pipelines, model serving at scale, AI-native application architectures.",
       "icon": "brain",
-      "color": "#10b981"
+      "color": "#00d4ff"
     },
     {
       "title": "ML Systems",
-      "description": "Training pipelines, feature stores, real-time inference optimization.",
+      "description": "Training pipelines, feature stores, real-time inference and ensemble model optimization.",
       "icon": "cpu",
+      "color": "#7c3aed"
+    },
+    {
+      "title": "Cloud Computing",
+      "description": "Serverless architectures, multi-cloud strategies, cost-efficient scaling patterns.",
+      "icon": "cloud",
+      "color": "#10b981"
+    },
+    {
+      "title": "Distributed Systems",
+      "description": "Consensus algorithms, fault tolerance, CAP theorem trade-offs in real-world systems.",
+      "icon": "network",
       "color": "#f59e0b"
     },
     {
-      "title": "Network Security",
-      "description": "Intrusion detection, zero-trust architectures, cryptographic protocols.",
-      "icon": "shield",
-      "color": "#ef4444"
+      "title": "Scalable Backends",
+      "description": "Horizontal scaling, sharding strategies, high-throughput API design.",
+      "icon": "layers",
+      "color": "#a855f7"
     },
     {
       "title": "Internet Measurements",
@@ -270,13 +265,13 @@
       "title": "Concurrent Systems",
       "description": "Lock-free data structures, actor models, high-throughput concurrent programming.",
       "icon": "zap",
-      "color": "#a855f7"
+      "color": "#ec4899"
     },
     {
-      "title": "Scalable Computing",
-      "description": "Horizontal scaling patterns, sharding strategies, performance engineering.",
-      "icon": "layers",
-      "color": "#ec4899"
+      "title": "Full-Stack Architecture",
+      "description": "Modern web stacks, component-driven UI, API design and system integration.",
+      "icon": "shield",
+      "color": "#10b981"
     }
   ]
 }

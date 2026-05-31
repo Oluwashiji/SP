@@ -16,7 +16,7 @@ const TIMELINE = [
   { year: "2022", event: "Began freelancing · Full-Stack Development", color: "#10b981" },
   { year: "2023", event: "Internship · Graphics Packaging International", color: "#f59e0b" },
   { year: "2024", event: "Deep dive into AI Systems & Distributed Computing", color: "#a855f7" },
-  { year: "2025", event: "Building LECTURE-LINK · AI-Enhanced Learning Portal", color: "#00d4ff" },
+  { year: "2025", event: "Built LECTURE-LINK · AI-Enhanced Learning Portal", color: "#00d4ff" },
 ];
 
 function StatCard({ value, label, index }: { value: string; label: string; index: number }) {

@@ -10,16 +10,16 @@ const GlobeCanvas = dynamic(() => import("../3d/GlobeCanvas"), {
 
 interface PersonalInfo {
   email: string;
+  phone: string;
   github: string;
   linkedin: string;
-  twitter: string;
 }
 
 const SOCIAL_ICONS: Record<string, string> = {
   email: "✉",
+  phone: "☎",
   github: "⌥",
   linkedin: "in",
-  twitter: "✕",
 };
 
 export default function Contact({ personal }: { personal: PersonalInfo }) {
@@ -39,8 +39,8 @@ export default function Contact({ personal }: { personal: PersonalInfo }) {
   const socials = [
     { key: "github", label: "GitHub", href: personal.github, color: "#e8e8f0" },
     { key: "linkedin", label: "LinkedIn", href: personal.linkedin, color: "#0077b5" },
-    { key: "twitter", label: "X / Twitter", href: personal.twitter, color: "#e8e8f0" },
-    { key: "email", label: "Email", href: `mailto:${personal.email}`, color: "#00d4ff" },
+    { key: "email", label: personal.email, href: `mailto:${personal.email}`, color: "#00d4ff" },
+    { key: "phone", label: personal.phone, href: `tel:${personal.phone}`, color: "#10b981" },
   ];
 
   return (
@@ -52,7 +52,6 @@ export default function Contact({ personal }: { personal: PersonalInfo }) {
     >
       <div className="absolute inset-0 grid-pattern opacity-30 pointer-events-none" />
 
-      {/* Top accent */}
       <div
         className="absolute top-0 left-0 right-0 h-px"
         style={{ background: "linear-gradient(90deg, transparent, var(--cyan), var(--purple), transparent)" }}
@@ -63,23 +62,23 @@ export default function Contact({ personal }: { personal: PersonalInfo }) {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
           <p className="font-mono text-xs mb-3" style={{ color: "var(--cyan)", letterSpacing: "0.2em" }}>
             06 / CONTACT
           </p>
           <h2
-            className="font-display font-extrabold mb-4"
+            className="font-display font-extrabold mb-6"
             style={{ fontSize: "clamp(2rem, 5vw, 4rem)", letterSpacing: "-0.02em", color: "var(--white)" }}
           >
             Let&apos;s Build Something
           </h2>
-          <p className="text-sm max-w-md mx-auto" style={{ color: "var(--gray-400)" }}>
+          <p className="text-base max-w-lg mx-auto leading-relaxed" style={{ color: "var(--gray-400)" }}>
             Open to internships, research collaborations, and interesting engineering problems. Say hello.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* Left: form */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -90,23 +89,23 @@ export default function Contact({ personal }: { personal: PersonalInfo }) {
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="holo-card rounded-2xl p-10 text-center"
+                className="holo-card rounded-2xl p-12 text-center"
               >
-                <div className="text-4xl mb-4">✓</div>
-                <h3 className="font-display font-bold text-xl mb-2" style={{ color: "var(--white)" }}>
+                <div className="text-5xl mb-5">✓</div>
+                <h3 className="font-display font-bold text-2xl mb-3" style={{ color: "var(--white)" }}>
                   Message Sent
                 </h3>
-                <p className="text-sm" style={{ color: "var(--gray-400)" }}>
+                <p className="text-sm leading-relaxed" style={{ color: "var(--gray-400)" }}>
                   I&apos;ll get back to you soon. Let&apos;s build something great.
                 </p>
               </motion.div>
             ) : (
-              <div className="holo-card rounded-2xl p-8 space-y-5">
+              <div className="holo-card rounded-2xl p-8 space-y-6">
                 {["name", "email", "message"].map((field) => (
                   <div key={field}>
                     <label
-                      className="block font-mono text-xs mb-2"
-                      style={{ color: "var(--gray-500)", letterSpacing: "0.1em" }}
+                      className="block font-mono text-xs mb-2.5"
+                      style={{ color: "var(--gray-500)", letterSpacing: "0.12em" }}
                     >
                       {field.toUpperCase()}
                     </label>
@@ -122,6 +121,7 @@ export default function Contact({ personal }: { personal: PersonalInfo }) {
                           border: "1px solid rgba(255,255,255,0.08)",
                           color: "var(--white)",
                           outline: "none",
+                          lineHeight: "1.7",
                         }}
                         onFocus={(e) => { e.currentTarget.style.borderColor = "rgba(0,212,255,0.4)"; }}
                         onBlur={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.08)"; }}
@@ -149,7 +149,7 @@ export default function Contact({ personal }: { personal: PersonalInfo }) {
                 <button
                   onClick={handleSubmit}
                   disabled={status === "sending"}
-                  className="w-full py-3 rounded-xl font-mono text-sm font-bold transition-all duration-200"
+                  className="w-full py-3.5 rounded-xl font-mono text-sm font-bold transition-all duration-200"
                   style={{
                     background: status === "sending" ? "rgba(0,212,255,0.3)" : "var(--cyan)",
                     color: "var(--black)",
@@ -170,9 +170,9 @@ export default function Contact({ personal }: { personal: PersonalInfo }) {
                 <a
                   key={key}
                   href={href}
-                  target="_blank"
-                  rel="noopener"
-                  className="flex items-center gap-2 px-4 py-2 rounded-xl font-mono text-xs transition-all duration-200"
+                  target={key !== "phone" ? "_blank" : undefined}
+                  rel={key !== "phone" ? "noopener" : undefined}
+                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl font-mono text-xs transition-all duration-200"
                   style={{
                     background: "rgba(255,255,255,0.04)",
                     border: "1px solid rgba(255,255,255,0.08)",
@@ -201,13 +201,11 @@ export default function Contact({ personal }: { personal: PersonalInfo }) {
             initial={{ opacity: 0, x: 30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.3, duration: 0.7 }}
-            className="relative h-[450px]"
+            className="relative h-[480px]"
           >
             <GlobeCanvas />
-
-            {/* Overlay label */}
             <div
-              className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full font-mono text-xs"
+              className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full font-mono text-xs whitespace-nowrap"
               style={{
                 background: "rgba(5,5,5,0.8)",
                 border: "1px solid rgba(0,212,255,0.2)",
