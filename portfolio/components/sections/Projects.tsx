@@ -21,10 +21,7 @@ interface Project {
 const CATEGORIES = [
   "All",
   "Web Development Projects",
-  "Cloud Engineering Projects",
   "AI/ML Projects",
-  "Distributed Systems Projects",
-  "Cybersecurity Projects",
 ];
 
 function StatusBadge({ status }: { status: string }) {

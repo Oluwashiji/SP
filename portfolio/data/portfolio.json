@@ -97,7 +97,7 @@
     {
       "id": "gpi-website",
       "featured": false,
-      "title": "IPG Localized Site",
+      "title": "GPI Localized Site",
       "subtitle": "Corporate Website · Graphics Packaging International",
       "description": "A localized web presence built for GPI during my internship. Clean, performant, and branded to the company's identity.",
       "longDescription": "Built and deployed a localized corporate website for Graphics Packaging International as part of my internship work. Focused on performance, accessibility, and accurate brand representation.",
@@ -135,54 +135,14 @@
       "status": "Production"
     },
     {
-      "id": "cloud-orchestrator",
-      "featured": false,
-      "title": "Cloud Orchestrator",
-      "subtitle": "Multi-Cloud Infrastructure Management",
-      "description": "A unified dashboard for managing resources across AWS and Azure. Provides cost optimization recommendations, automated scaling policies, and infrastructure-as-code generation.",
-      "longDescription": "Designed to solve the complexity of multi-cloud deployments, this orchestrator unifies resource management, monitoring, and cost analysis across major cloud providers.",
-      "category": "Cloud Engineering Projects",
-      "tags": ["Python", "Terraform", "AWS", "Azure", "React", "FastAPI"],
-      "features": [
-        "Multi-cloud resource management",
-        "Cost optimization AI",
-        "Auto-scaling policies",
-        "IaC generation",
-        "Real-time monitoring"
-      ],
-      "github": "https://github.com/Oluwashiji",
-      "demo": "",
-      "color": "#7c3aed",
-      "status": "In Progress"
-    },
-    {
-      "id": "ml-pipeline",
-      "featured": false,
-      "title": "MLFlow Engine",
-      "subtitle": "Automated ML Training Pipeline",
-      "description": "An end-to-end machine learning pipeline for automated model training, evaluation, versioning, and deployment. Integrates with AWS SageMaker for distributed training.",
-      "longDescription": "Built to eliminate ML engineering boilerplate, this pipeline handles data ingestion, feature engineering, model training, A/B testing, and production deployment automatically.",
-      "category": "AI/ML Projects",
-      "tags": ["Python", "AWS", "Docker", "PostgreSQL", "FastAPI"],
-      "features": [
-        "Automated training",
-        "Model versioning",
-        "A/B testing",
-        "AWS SageMaker integration",
-        "Monitoring"
-      ],
-      "github": "https://github.com/Oluwashiji",
-      "demo": "",
-      "color": "#06b6d4",
-      "status": "In Progress"
-    }
-  ],
+      
+
   "experience": [
     {
       "id": "gpi",
       "company": "Graphics Packaging International",
       "role": "IT Intern",
-      "period": "2023",
+      "period": "2025",
       "duration": "3 months",
       "description": "Assisted in maintaining enterprise IT infrastructure across production facilities. Handled hardware diagnostics, software deployment, and network troubleshooting in a high-throughput manufacturing environment.",
       "highlights": [
