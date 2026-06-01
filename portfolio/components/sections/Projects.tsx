@@ -182,7 +182,7 @@ function FeaturedProject({ project }: { project: Project }) {
                   <span>ai-chat --context course-materials</span>
                 </div>
                 <div style={{ color: "var(--gray-600)" }}>→ RAG pipeline initialized</div>
-                <div style={{ color: project.color }}>◉ Ready · 1,200 active users</div>
+                <div style={{ color: project.color }}>◉ Live in Production</div>
               </div>
             </div>
 
