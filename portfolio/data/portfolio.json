@@ -58,7 +58,7 @@
       "title": "LECTURE-LINK",
       "subtitle": "AI-Enhanced Departmental Learning Portal",
       "description": "A full-stack AI-powered learning management system built for university departments. Features semantic search across all course materials, an intelligent AI chatbot for student queries, and a comprehensive analytics dashboard for educators.",
-      "longDescription": "LECTURE-LINK reimagines how universities manage and deliver educational content. Built with a microservices architecture, it handles thousands of concurrent users while providing personalized learning experiences powered by machine learning. The semantic search engine indexes lecture notes, past papers, and resources — returning contextually relevant results even for vague queries.",
+      "longDescription": "LECTURE-LINK reimagines how universities manage and deliver educational content. Built with a microservices architecture, it provides personalized learning experiences powered by machine learning. The semantic search engine indexes lecture notes, past papers, and resources — returning contextually relevant results even for vague queries.",
       "category": "AI/ML Projects",
       "tags": ["Next.js", "Python", "FastAPI", "PostgreSQL", "OpenAI", "Docker", "AWS"],
       "features": [
@@ -113,7 +113,7 @@
       "demo": "https://oluwashiji.github.io/IPG/index.html",
       "color": "#f59e0b",
       "status": "Complete"
-    }
+    },
     {
       "id": "bereah",
       "featured": false,
@@ -133,10 +133,8 @@
       "demo": "https://bereah-landing.onrender.com/",
       "color": "#a855f7",
       "status": "Production"
-    },
-    {
-      
-
+    }
+  ],
   "experience": [
     {
       "id": "gpi",
